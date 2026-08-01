@@ -26,7 +26,8 @@ shareBtn.addEventListener("click", async () => {
   try {
     const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
 
-    if (!tab?.url?.includes("/gp/cart/view.html")) {
+    const isCartUrl = tab?.url && /amazon\.(com|in)\/(gp\/)?cart/i.test(tab.url);
+    if (!isCartUrl) {
       setStatus("Open your Amazon cart page first, then click this again.");
       shareBtn.disabled = false;
       return;

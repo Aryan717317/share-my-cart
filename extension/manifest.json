@@ -26,7 +26,11 @@
     {
       "matches": [
         "https://www.amazon.com/gp/cart/view.html*",
-        "https://www.amazon.in/gp/cart/view.html*"
+        "https://www.amazon.com/gp/cart/*",
+        "https://www.amazon.com/cart/*",
+        "https://www.amazon.in/gp/cart/view.html*",
+        "https://www.amazon.in/gp/cart/*",
+        "https://www.amazon.in/cart/*"
       ],
       "js": ["src/content-script.js"],
       "run_at": "document_idle"
