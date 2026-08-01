@@ -18,19 +18,19 @@
   },
   "permissions": ["activeTab", "scripting", "storage"],
   "host_permissions": [
-    "https://www.amazon.com/*",
-    "https://www.amazon.in/*",
+    "https://*.amazon.com/*",
+    "https://*.amazon.in/*",
     "http://localhost:3000/*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "https://www.amazon.com/gp/cart/view.html*",
-        "https://www.amazon.com/gp/cart/*",
-        "https://www.amazon.com/cart/*",
-        "https://www.amazon.in/gp/cart/view.html*",
-        "https://www.amazon.in/gp/cart/*",
-        "https://www.amazon.in/cart/*"
+        "https://*.amazon.com/gp/cart/view.html*",
+        "https://*.amazon.com/gp/cart/*",
+        "https://*.amazon.com/cart/*",
+        "https://*.amazon.in/gp/cart/view.html*",
+        "https://*.amazon.in/gp/cart/*",
+        "https://*.amazon.in/cart/*"
       ],
       "js": ["src/content-script.js"],
       "run_at": "document_idle"
