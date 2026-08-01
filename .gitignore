@@ -1,0 +1,21 @@
+# Node
+node_modules/
+.next/
+out/
+dist/
+.env
+.env.local
+*.log
+npm-debug.log*
+*.tsbuildinfo
+
+# Extension build output
+extension/*.zip
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local db
+web/data/
+*.sqlite
